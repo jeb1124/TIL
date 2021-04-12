@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+
+	//
+	var list = ''; //값에 의해서 데이터 타입이 동적으로 할당
+	
+	//복합연산자 사용
+	list +='<ul>';
+	list +='<li>Hello</li>';
+	list +='<li>JavaScript</li>';
+	list +='</ul>'
+	
+	//list변수안의 있는 축적된 모든 내용을 웹 브라우저에 출력
+	//이때 document.어느영역.innerhtml = list;
+	
+	//document.body.innerhtml = list;
+	document.getElementById("wrap").innerHTML = list;
+});
+
+$(document).ready(function() {
+	alert("aaa");
+});
+</script>
+</head>
+
+<body>
+<h2>======onLoad=======</h2>
+<div id="wrap"></div>
+</body>
+
+</html>
